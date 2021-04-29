@@ -1,0 +1,25 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ReadFileData {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+    
+	FileReader f=new FileReader("D:\\deep\\hello.txt");
+	
+	BufferedReader b=new BufferedReader(f);
+	
+	String s;
+	
+	
+	while((s=b.readLine())!=null)
+	{
+	System.out.println(s);
+	}
+	b.close();	
+		
+	}
+
+}
