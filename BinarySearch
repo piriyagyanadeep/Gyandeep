@@ -1,0 +1,47 @@
+public class BinarySearch {
+
+	public static void main(String[] args) {
+		
+     int x[]= {1,2,3,4,5};
+     
+     int l=0;
+     int h=x.length-1;
+     
+     int s=5;
+     boolean f=false;
+     
+     while(l<=h)
+     {
+     int mid=(l+h)/2;
+     
+     if(x[mid]==s)
+     {
+     System.out.println("element found>> "+s);
+     f=true;
+     break;
+     }
+     
+     if(x[mid]<s)
+     {
+     l=mid+1;
+     }
+     
+     if(x[mid]>s)
+     {
+     h=mid-1;
+     }
+     
+     
+     
+     }
+     
+     if(f==false)
+     {
+     System.out.println("element not found");
+     }
+     
+     
+		
+	}
+
+}
