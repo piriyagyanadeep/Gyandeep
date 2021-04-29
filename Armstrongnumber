@@ -1,0 +1,38 @@
+public class Armstrongnumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     
+		int n=153;
+		
+		int rem;
+		
+		int s=n;
+		
+		int arm=0;
+		
+		while(n>0)
+		{
+		rem=n%10;
+		
+		arm=arm+(rem*rem*rem);
+		
+		n=n/10;
+		
+		}
+			
+		if(s==arm)
+		{
+		System.out.println("is armstrong");	
+		}
+		else
+		{
+			System.out.println("is not armstrong");	
+		}
+		
+		
+		
+		
+	}
+
+}
