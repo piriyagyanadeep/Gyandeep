@@ -1,0 +1,16 @@
+public class CountOccurance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    
+		String s="helloe";
+		
+		int l=s.length();
+		
+		int s1=s.replace("e","").length();
+		
+		System.out.println(l-s1);
+			
+	}
+
+}
